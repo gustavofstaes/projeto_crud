@@ -1,16 +1,32 @@
 # crud_flutter_web
 
-A new Flutter project.
+Projeto Flutter Web com backend em Spring Boot para um sistema CRUD (Criar, Ler, Atualizar, Deletar) de usuários.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Este projeto é um ponto de partida para uma aplicação Flutter Web integrada com uma API REST em Spring Boot.
 
-A few resources to get you started if this is your first Flutter project:
+### Tecnologias usadas
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Flutter Web para frontend
+- Spring Boot para backend
+- MySQL para banco de dados
+- Comunicação via HTTP com API REST
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Como rodar o projeto
+
+1. Backend (Spring Boot):
+   - Configure o banco MySQL e ajuste o `application.properties` com suas credenciais.
+   - Execute o backend (`mvn spring-boot:run` ou via IDE).
+   - API disponível em `http://localhost:8080`.
+
+2. Frontend (Flutter Web):
+   - No diretório do Flutter, rode:
+     ```
+     flutter run -d chrome
+     ```
+   - A aplicação abrirá no navegador e consumirá a API backend.
+
+---
+
+Se precisar de ajuda, abra uma issue no repositório.
